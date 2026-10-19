@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>The Couples' Reconnect Quiz — Sensual Lavender Massage Crème for Date Night</title>
-<meta name="description" content="Build your couple's 10-minute reconnect ritual with Afterglow — a non-greasy lavender aromatherapy massage crème with Vitamin E, for date night, full-body relaxation and intimacy. Made in USA. Takes under 3 minutes.">
+<title>The Couples' Reconnect Quiz — Sensual Rose Massage Crème for Date Night</title>
+<meta name="description" content="Build your couple's 10-minute reconnect ritual with Afterglow — a non-greasy Sensual Rose aromatherapy massage crème with Vitamin E, for date night, full-body relaxation and intimacy. Made in USA. Takes under 3 minutes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
@@ -251,7 +251,7 @@ var STEPS = [
  {k:"intro",eyebrow:"Afterglow · The 10-Minute Reconnect Ritual™",
   h:'The couple’s touch ritual that brings back <span class="hlg">closeness, warmth and spark</span> — in 10 unhurried minutes a night, <span class="hlr">without an awkward conversation or a therapist’s couch</span>.',
   scene:true,
-  lede:'Here’s what no one tells you: most couples don’t drift apart in a fight — they drift apart in the <b>busyness</b>, one skipped moment of touch at a time. <b>Afterglow</b> is a warm, lavender massage crème plus a simple guided ritual that gives the two of you a reason to slow down and reconnect through touch again. Slow, attentive touch is one of the most reliable ways the body releases <b>oxytocin</b> — the “bonding” hormone that makes partners feel calmer, safer and closer. A <b>non-greasy aromatherapy lavender massage crème with Vitamin E</b> — made for date night, full-body relaxation and reconnecting as a couple. Answer a few quick questions and build your ritual — and unlock the bonus guides that come with it.',
+  lede:'Here’s what no one tells you: most couples don’t drift apart in a fight — they drift apart in the <b>busyness</b>, one skipped moment of touch at a time. <b>Afterglow</b> is a warm, Sensual Rose massage crème plus a simple guided ritual that gives the two of you a reason to slow down and reconnect through touch again. Slow, attentive touch is one of the most reliable ways the body releases <b>oxytocin</b> — the “bonding” hormone that makes partners feel calmer, safer and closer. A <b>non-greasy aromatherapy Sensual Rose massage crème with Vitamin E</b> — made for date night, full-body relaxation and reconnecting as a couple. Answer a few quick questions and build your ritual — and unlock the bonus guides that come with it.',
   note:"How it works: answer below in under 3 minutes. Each answer unlocks a free bonus that comes with your Afterglow and builds your reconnect plan at the end.",
   cta:"Build our ritual"},
 
@@ -280,7 +280,7 @@ var STEPS = [
    {e:"⏳",t:"Only 10 minutes",p:"Not a weekend away or a big talk. A short, repeatable ritual you can actually keep on a Tuesday night."},
    {e:"🕯️",t:"A reason to slow down",p:"The crème and the scent become a cue that it’s time to put the phones down and just be with each other."},
    {e:"📖",t:"It tells you how",p:"The 7-Night Reconnect guide walks you through exactly what to do — no guessing, no awkwardness."},
-   {e:"🌿",t:"Feels luxurious",p:"Non-greasy, paraben-free lavender crème with panthenol, keratin, collagen amino acids & vitamin E — skin feels softer too."},
+   {e:"🌿",t:"Feels luxurious",p:"Non-greasy, paraben-free Sensual Rose crème with almond &amp; jojoba oils, vitamin E and botanicals — skin feels softer too."},
    {e:"💞",t:"You do it together",p:"One gives, one receives, then you trade. Being allowed to simply receive is a rare gift for most couples."}
   ]},
 
@@ -326,7 +326,7 @@ function render(){
   if(s.k==="intro"){
     html+='<div class="eyebrow center">'+s.eyebrow+'</div>';
     html+='<h1 class="q center" style="margin-top:6px">'+p(s.h)+'</h1>';
-    html+=heroScene();
+    html+='<img class="hero-img" src="hero.webp" alt="Afterglow Sensual Couples Massage Crème — Made for 2" onerror="this.outerHTML=heroScene()">';
     html+='<p class="lede center">'+p(s.lede)+'</p>';
     html+='<div class="note">'+p(s.note)+'</div>';
     html+='<div class="authbar"><span>🚚 FREE DISCREET SHIPPING</span><span>🇺🇸 MADE IN USA</span><span>🌿 PARABEN-FREE</span><span>↩️ 60-DAY GUARANTEE</span></div>';
@@ -384,18 +384,20 @@ function render(){
     html+='<h1 class="q" style="margin-top:6px">From tonight, '+(name||"you")+', the two of you get a <span class="hlg">10-minute ritual that brings back closeness</span> — slow, warm and unhurried, for less than one couples massage.</h1></div>';
     html+='<p class="lede center" style="font-size:15.5px">No more ending the day back-to-back on your phones. The <b>Afterglow</b> crème plus the <b>7-Night Reconnect guide</b> give you a simple, repeatable reason to slow down and touch each other again — the thing that quietly keeps couples close.</p>';
     html+='<div class="offerline"><div class="eyebrow" style="margin-bottom:6px">The 10-Minute Reconnect Ritual™</div><div class="ol-top">The <b>Afterglow Couples Massage Crème</b> + <b>The Couples’ Touch Ritual</b> guide + <b>$'+earned+' in bonuses</b> for just</div><div class="ol-price">$'+PRICE+'</div><div class="ol-sub" style="color:var(--green);font-size:14px">Shipped free &amp; discreet — vs <b>$'+SPA+'+</b> for a single couples massage.</div><div class="ol-sub">One-time · free discreet US shipping · 60-day happiness guarantee</div></div>';
-    html+=bottleShot();
+    html+='<img class="hero-img" loading="lazy" src="compare.webp" alt="Without routine massage vs with Afterglow — before and after" onerror="this.outerHTML=bottleShot()">';
     /* why it works */
     html+='<div class="center" style="margin-top:22px"><div class="eyebrow">Why it actually works</div><h1 class="q" style="font-size:23px;margin-top:4px">The quiet chemistry of touch</h1></div>';
     html+='<p class="lede center" style="font-size:15px">Afterglow isn’t a potion and it doesn’t change your body chemistry. <b>The touch does.</b> Slow, attentive, consensual touch between partners is one of the most reliable triggers of <b>oxytocin</b> — the bonding hormone — while lowering cortisol, the stress hormone. In plain terms: attentive touch makes you both feel calmer, safer and closer. The crème simply makes that touch feel better, glide longer, and gives your night a signal that says <i>this is us.</i></p>';
     /* what you get */
     html+='<div class="center" style="margin-top:22px"><div class="eyebrow">What you get</div><h1 class="q" style="font-size:23px;margin-top:4px">The crème + the whole ritual</h1></div>';
+    html+='<img class="hero-img" loading="lazy" src="hero.webp" alt="Afterglow Sensual Couples Massage Crème — Made for 2" onerror="this.style.display=\'none\'" style="margin-bottom:14px">';
     html+='<div class="gifts"><h3>🧴 Your Afterglow Couples Massage Crème</h3>'+
-      gline("🤍","Full-size lavender massage crème","A non-greasy, paraben-free crème built on panthenol (pro-vitamin B5), hydrolyzed keratin, collagen amino acids, natural oils and vitamin E. Glides for a long, slow massage and leaves skin genuinely softer.","$47")+
+      gline("🤍","Full-size Sensual Rose massage crème","A non-greasy, paraben-free crème built on almond &amp; jojoba oils, vitamin E, panthenol (pro-vitamin B5) and botanical extracts. Glides for a long, slow massage and leaves skin genuinely softer.","$47")+
       gline("📖","The Couples’ Touch Ritual — 7-Night Reconnect","A beautifully made digital guide (sent to your email) that walks the two of you through one short session a night for seven nights — hands, shoulders, back, feet — from easy to deeply close.","$29")+
       '</div>';
     /* how it works */
-    html+='<div class="center" style="margin-top:22px"><div class="eyebrow">How the ritual works</div><h1 class="q" style="font-size:23px;margin-top:4px">Three moves. Ten minutes.</h1></div>';
+    html+='<div class="center" style="margin-top:22px"><div class="eyebrow">How the ritual works</div><h1 class="q" style="font-size:23px;margin-top:4px">Six steps to connection</h1></div>';
+    html+='<img class="hero-img" loading="lazy" src="steps.webp" alt="Afterglow — six steps: set the mood, pump, warm, massage, connect, enjoy" onerror="this.style.display=\'none\'">';
     html+='<div class="steps" style="margin-top:14px">'+
       '<div class="step"><span class="n">1</span><div><b>Warm it in your hands</b><p>Phones in another room. Rub a little Afterglow between your palms so it’s warm before the first touch — cold hands break the moment.</p></div></div>'+
       '<div class="step"><span class="n">2</span><div><b>Go slower than feels normal</b><p>Start easy — hands, then shoulders and neck. Move at half the pace you think you should. Slow touch reads as care; fast touch reads as a task.</p></div></div>'+
@@ -413,15 +415,22 @@ function render(){
       '<div class="step"><span class="n">7</span><div><b>Mutual</b><p>Your own ritual now — and you decide, together, to keep the habit.</p></div></div>'+
       '</div>';
     /* ingredients */
-    html+='<div class="center" style="margin-top:22px"><div class="eyebrow">What’s inside</div><h1 class="q" style="font-size:23px;margin-top:4px">Gentle, nourishing, lavender-soft</h1></div>';
+    html+='<div class="center" style="margin-top:22px"><div class="eyebrow">What’s inside</div><h1 class="q" style="font-size:23px;margin-top:4px">A nourishing botanical blend</h1></div>';
+    html+='<img class="hero-img" loading="lazy" src="ingredients.webp" alt="Almond oil, jojoba, Vitamin E, lavender and rose extract" onerror="this.style.display=\'none\'">';
     html+='<div class="steps" style="margin-top:14px">'+
-      '<div class="step"><span class="n">✓</span><div><b>Panthenol (pro-vitamin B5) + vitamin E</b><p>Deeply conditioning — leaves skin soft and smooth, never greasy.</p></div></div>'+
-      '<div class="step"><span class="n">✓</span><div><b>Hydrolyzed keratin &amp; collagen amino acids</b><p>Skin-loving proteins for a silky, cared-for finish.</p></div></div>'+
-      '<div class="step"><span class="n">✓</span><div><b>Natural oils (incl. jojoba) + aromatherapy lavender</b><p>A calming lavender aroma that becomes your signal to slow down. Non-greasy, paraben-free, gentle for nightly full-body use.</p></div></div>'+
+      '<div class="step"><span class="n">✓</span><div><b>Almond &amp; jojoba oils</b><p>Nourish, soften and condition — a smooth, rich glide that absorbs without a greasy feel.</p></div></div>'+
+      '<div class="step"><span class="n">✓</span><div><b>Vitamin E + panthenol (pro-vitamin B5)</b><p>Help protect and restore — leave skin soft, smooth and cared-for.</p></div></div>'+
+      '<div class="step"><span class="n">✓</span><div><b>Rose extract + a touch of lavender</b><p>A warm, sensual rose-and-botanical aroma that becomes your signal to slow down. Non-greasy, paraben-free, gentle for nightly full-body use.</p></div></div>'+
       '</div>';
+    /* works all year */
+    html+='<div class="center" style="margin-top:22px"><div class="eyebrow">Every season</div><h1 class="q" style="font-size:23px;margin-top:4px">Closer, all year round</h1></div>';
+    html+='<img class="hero-img" loading="lazy" src="seasons.webp" alt="Afterglow for spring, summer, fall and winter" onerror="this.style.display=\'none\'">';
+    /* rich texture / durability */
+    html+='<div class="center" style="margin-top:22px"><div class="eyebrow">Real moments · real results</div><h1 class="q" style="font-size:23px;margin-top:4px">Rich, fast-absorbing, long-lasting</h1></div>';
+    html+='<img class="hero-img" loading="lazy" src="durability.webp" alt="Rich texture, fast absorption, long-lasting, perfect for repeated use" onerror="this.style.display=\'none\'">';
     /* reviews */
     html+='<div class="center" style="margin-top:24px"><div class="eyebrow">★★★★★ Real buyers · verified</div><h1 class="q" style="font-size:23px;margin-top:4px">What couples are saying</h1></div>';
-    html+=rvw("J","Jenna","It gave us a reason to slow down.","We’d turned into roommates who love each other but never touch. Ten minutes a night with this and the little guide — we actually look forward to winding down together now. The lavender is gorgeous and it’s not greasy at all.");
+    html+=rvw("J","Jenna","It gave us a reason to slow down.","We’d turned into roommates who love each other but never touch. Ten minutes a night with this and the little guide — we actually look forward to winding down together now. The rose scent is gorgeous and it’s not greasy at all.");
     html+=rvw("M","Marcus","The 7-night thing worked on us.","I’m not a ‘massage’ guy but the guide made it simple — just follow the night. By the end of the week we were closer than we’ve been in a long time. Didn’t expect to be writing a review about a lotion.");
     html+=rvw("P","Priya","Better than another date night we’re too tired for.","We kept planning date nights and bailing because we were exhausted. This we can actually do — in bed, ten minutes, no booking, no babysitter. It’s become our thing.");
     html+=rvw("D","Devon","Soft skin, calmer nights, closer us.","Honestly bought it skeptical. The crème feels lovely and lasts, but the real surprise was how much just slowing down and touching each other on purpose changed the mood between us.");
@@ -462,7 +471,7 @@ function render(){
     html+='<div class="faq">'+
       faq("Is this a sexual product or a lubricant?","No. Afterglow is a body &amp; massage crème for external use on the skin. It is not a personal lubricant and is not intended for internal or genital use. It’s about reconnecting through slow, affectionate touch — where the night goes from there is entirely up to the two of you.")+
       faq("We’re not ‘massage people.’ Will we know what to do?","Yes — that’s what the 7-Night guide is for. Each night is one short, simple session: just follow it. No technique or training needed.")+
-      faq("Does it really do anything, or is it just a lotion?","The crème is a genuinely nice lavender moisturizer — but the effect on your relationship comes from the ritual. Slow, attentive touch is well-documented to raise oxytocin and lower stress. The crème makes that touch feel good and gives you a reason to do it nightly.")+
+      faq("Does it really do anything, or is it just a lotion?","The crème is a genuinely nice botanical rose moisturizer — but the effect on your relationship comes from the ritual. Slow, attentive touch is well-documented to raise oxytocin and lower stress. The crème makes that touch feel good and gives you a reason to do it nightly.")+
       faq("Is the packaging discreet?","Yes. It ships in plain, unbranded packaging — nothing on the box says what’s inside.")+
       faq("Is it safe for sensitive skin?","It’s paraben-free and gentle for nightly full-body use. As with any new product, patch-test a small area first and stop use if irritation occurs. Keep away from eyes.")+
       faq("What’s your guarantee?","60 days. Do the ritual — if the two of you don’t feel closer, email us for a full refund and keep the guides.")+
